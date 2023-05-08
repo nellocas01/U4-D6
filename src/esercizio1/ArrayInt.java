@@ -34,7 +34,7 @@ public class ArrayInt {
 					}
 					break;
 				default:
-					System.out.println("inserisci valore da  a 5");
+					System.out.println("inserisci valore da 1 a 5");
 					break;
 				}
 			} else {
