@@ -1,19 +1,28 @@
 package esercizio1;
 
+import java.util.Random;
 import java.util.logging.Logger;
 
 import org.slf4j.LoggerFactory;
 
 public class ArrayInt {
 
-	private static Logger logger = (Logger) LoggerFactory.getLogger(ArrayInt.class);
+	//private static Logger logger = (Logger) LoggerFactory.getLogger(ArrayInt.class);
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println("funziona");
-		System.out.println("che bello");
+		Random random = new Random();
 		
-		logger.info("ciao");
+		int number = random.nextInt(11);
+		if (number != 0) {
+			System.out.println(number);
+		}else {
+			try {
+				 number = 0;
+				
+			} catch(e){
+				System.out.println(e.getMessage());
+			}
+		}
 		
 	}
 
