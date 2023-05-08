@@ -1,13 +1,23 @@
 package esercizio2;
 
+import java.util.Scanner;
+
 public class PrestazioniAuto {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int km = 600;
-		int litri = 60;
-		System.out.println("l'utente ha percorso: " + km + "km consumando in totale: " + litri + " litri di carburante");
-
+		Scanner scan = new Scanner(System.in);
+		System.out.println("inserisci km percorsi");
+		try {
+			int km = scan.nextInt();
+			System.out.println("inserisci i litri di carburante consumati");
+			int litri = scan.nextInt();
+			System.out.println("il consumo di carburante è pari a: " + kmLitro(km, litri) + " km/L");
+		} catch (ArithmeticException e) {
+			System.out.println("devi innserire valori positivi");
+		}
 	}
 
+	public static int kmLitro(int km, int litri) {
+		return km / litri;
+	}
 }

@@ -1,11 +1,9 @@
 package esercizio1;
 
 //UNCHECKED
-public class NumberZero extends ArrayInt {
-	private int number;
+public class NumberZero extends RuntimeException {
 
-	public NumberZero(String message, int number) {
+	public NumberZero(String message) {
 		super(message);
-		this.number = number;
 	}
 }
